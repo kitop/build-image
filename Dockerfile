@@ -25,10 +25,10 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-key adv --fetch-keys https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc && \
     apt-key adv --fetch-keys https://packagecloud.io/github/git-lfs/gpgkey && \
     apt-add-repository -y -s 'deb https://packagecloud.io/github/git-lfs/ubuntu/ trusty main' && \
-    add-apt-repository -y ppa:ondrej/php && \
     add-apt-repository -y ppa:openjdk-r/ppa && \
     add-apt-repository -y ppa:git-core/ppa && \
     add-apt-repository -y ppa:rwky/graphicsmagick && \
+    add-apt-repository -y ppa:ondrej/php && \
     add-apt-repository -y ppa:deadsnakes/ppa && \
     add-apt-repository -y ppa:kelleyk/emacs && \
     apt-add-repository -y 'deb https://packages.erlang-solutions.com/ubuntu trusty contrib' && \
@@ -107,7 +107,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
         libgif-dev \
         libglib2.0-dev \
         libgmp3-dev \
-        libgraphicsmagick3 \
+        libgraphicsmagick-q16-3 \
         libgtk-3-0 \
         libgtk2.0-0 \
         libicu-dev \
@@ -125,7 +125,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
         libssl-dev \
         libtiff5-dev \
         libwebp-dev \
-        libwebp5 \
+        libwebp6 \
         libxml2-dev \
         libxrender1 \
         libxslt-dev \
